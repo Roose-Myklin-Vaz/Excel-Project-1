@@ -1,0 +1,178 @@
+Task in Entering Datas:
+===========================
+
+1. Merge first and last names into a full name column.
+
+First Name 	Last Name 	Full Name
+		
+Aanya	Sharma	Aanya Sharma
+Rohan	Gupta	Rohan Gupta
+Anika	Singh	Anika Singh
+Arjun	Mehta	Arjun Mehta
+Kiara	Kapoor	Kiara Kapoor
+Aarav	Patel	Aarav Patel
+Meera	Desai	Meera Desai
+Ishaan	Malhotra	Ishaan Malhotra
+Priya	Verma	Priya Verma
+Kabir	Joshi	Kabir Joshi
+
+Formula Used =CONCATENATE(A4," ",B4)
+
+
+2. Combine city and state into a single address column.
+
+Cities	States	Address
+Delhi	Delhi	Delhi,Delhi
+Mumbai	Maharashtra	Mumbai,Maharashtra
+Bengaluru	Karnataka	Bengaluru,Karnataka
+Chennai	Tamil Nadu	Chennai,Tamil Nadu
+Kolkata	West Bengal	Kolkata,West Bengal
+Hyderabad	Telangana	Hyderabad,Telangana
+Ahmedabad	Gujarat	Ahmedabad,Gujarat
+Pune	Maharashtra	Pune,Maharashtra
+Jaipur	Rajasthan	Jaipur,Rajasthan
+Lucknow	Uttar Pradesh	Lucknow,Uttar Pradesh
+
+Formula Used = TEXTJOIN(",", TRUE,A19,B19)
+
+3. Join first name, last name, and age into a single cell.
+First Name	Last Name	Age	Details
+Aanya	Sharma	25	Aanya Sharma , 25
+Rohan	Gupta	30	Rohan Gupta , 30
+Anika	Singh	22	Anika Singh , 22
+Arjun	Mehta	28	Arjun Mehta , 28
+Kiara	Kapoor	27	Kiara Kapoor , 27
+Aarav	Patel	24	Aarav Patel , 24
+Meera	Desai	26	Meera Desai , 26
+Ishaan	Malhotra	29	Ishaan Malhotra , 29
+Priya	Verma	23	Priya Verma , 23
+Kabir	Joshi	31	Kabir Joshi , 31
+
+Formula Used =TEXTJOIN(" ", TRUE, A34, B34, ",", C34)
+Formula Used=CONCATENATE(A35," ",B35," , ",C35)			
+
+4. Concatenate a product name with its ID for unique identification.
+		
+Product Name	Product ID	Unique Identification
+Wireless Mouse	WM001	Wireless Mouse WM001
+Bluetooth Headphones	BH002	Bluetooth Headphones BH002
+USB-C Charger	UC003	USB-C Charger UC003
+Smartwatch	SW004	Smartwatch SW004
+Gaming Keyboard	GK005	Gaming Keyboard GK005
+Portable Speaker	PS006	Portable Speaker PS006
+External Hard Drive	EH007	External Hard Drive EH007
+Fitness Tracker	FT008	Fitness Tracker FT008
+Laptop Stand	LS009	Laptop Stand LS009
+Noise Cancelling Earbuds	NE010	Noise Cancelling Earbuds NE010
+		
+Formula Used =CONCATENATE(A49," ",B49)
+5. Merge date, month, and year into a single date string.
+
+Date	Month	Year	Full Date
+5	January	2023	5-January-2023
+12	February	2024	12-February-2024
+20	March	2025	20-March-2025
+1	April	2023	1-April-2023
+15	May	2024	15-May-2024
+18	June	2025	18-June-2025
+25	July	2023	25-July-2023
+30	August	2024	30-August-2024
+7	September	2025	7-September-2025
+22	October	2023	22-October-2023
+			
+Formula Used =CONCATENATE(A64,"-",B64,"-",C64)
+
+6. Concatenate department codes with employee IDs for tracking.
+Department Code	Employee ID	Unique Identification
+HR01	EMP001	HR01 - EMP001
+IT02	EMP002	IT02 - EMP002
+FIN03	EMP003	FIN03 - EMP003
+MKT04	EMP004	MKT04 - EMP004
+OPS05	EMP005	OPS05 - EMP005
+ADM06	EMP006	ADM06 - EMP006
+DEV07	EMP007	DEV07 - EMP007
+LEG08	EMP008	LEG08 - EMP008
+RND09	EMP009	RND09 - EMP009
+PRD10	EMP010	PRD10 - EMP010
+		
+
+Formula Used =CONCATENATE(A79," - ",B79)
+7. Combine multiple text columns into a structured sentence.
+
+First Name	Last Name	Grade	Favorite Subject	Sentence
+Aanya	Sharma	A	Mathematics	Aanya Sharma has secured A and the students favourite subject is Mathematics.
+Rohan	Gupta	B	Physics	Rohan Gupta has secured B and the students favourite subject is Physics.
+Anika	Singh	A+	Biology	Anika Singh has secured A+ and the students favourite subject is Biology.
+Arjun	Mehta	B+	Chemistry	Arjun Mehta has secured B+ and the students favourite subject is Chemistry.
+Kiara	Kapoor	A	English	Kiara Kapoor has secured A and the students favourite subject is English.
+Aarav	Patel	A+	History	Aarav Patel has secured A+ and the students favourite subject is History.
+Meera	Desai	B	Computer Science	Meera Desai has secured B and the students favourite subject is Computer Science.
+Ishaan	Malhotra	B+	Geography	Ishaan Malhotra has secured B+ and the students favourite subject is Geography.
+Priya	Verma	A	Economics	Priya Verma has secured A and the students favourite subject is Economics.
+Kabir	Joshi	A+	Literature	Kabir Joshi has secured A+ and the students favourite subject is Literature.
+				
+Formula Used =CONCATENATE(A94," ",B94," has secured ",C94, " and the students favourite subject is ",D94,".")
+8. Create a list of comma-separated email addresses from multiple cells.
+Email Address	Total Address			
+john@example.com	john@example.com, jane@example.com, alex@example.com, emma@example.com, chris@example.com			
+jane@example.com				
+alex@example.com				
+emma@example.com				
+chris@example.com				
+				
+Formula Used=CONCATENATE(A109,", ",A110,", ",A111,", ",A112,", ",A113)
+9. Append prefixes like Mr./Ms. to names dynamically.
+Name	Gender	
+Aanya	Female	
+Rohan	Male	
+Anika	Female	
+Arjun	Male	
+Kiara	Female	
+Aarav	Male	
+Meera	Female	
+Ishaan	Male	
+Priya	Female	
+Kabir	Male	
+		
+
+10. Merge numerical values and text to form custom labels.
+City	Temperature (°C)	Merged data 
+New Delhi	35	The temperature of New Delhi is 35°C.
+Mumbai	30	The temperature of Mumbai is 30°C.
+Bengaluru	28	The temperature of Bengaluru is 28°C.
+Kolkata	34	The temperature of Kolkata is 34°C.
+Chennai	32	The temperature of Chennai is 32°C.
+Hyderabad	33	The temperature of Hyderabad is 33°C.
+Jaipur	36	The temperature of Jaipur is 36°C.
+Lucknow	34	The temperature of Lucknow is 34°C.
+Pune	29	The temperature of Pune is 29°C.
+Ahmedabad	37	The temperature of Ahmedabad is 37°C.
+		
+Formula Used =CONCATENATE("The temperature of ",A134," is ",B134,"°C.")
+
+11. Concatenate large datasets while maintaining formatting.
+Product Name	Product Category	Price (₹)	Data compilation
+Smart TV	Electronics	25,000	Smart TV - Electronics - ₹25000
+Microwave Oven	Home Appliances	12,000	Microwave Oven - Home Appliances - ₹12000
+Office Chair	Furniture	7,500	Office Chair - Furniture - ₹7500
+Denim Jacket	Clothing	3,500	Denim Jacket - Clothing - ₹3500
+Running Shoes	Footwear	4,000	Running Shoes - Footwear - ₹4000
+Cricket Bat	Sports Equipment	5,000	Cricket Bat - Sports Equipment - ₹5000
+Face Cream	Beauty Products	1,200	Face Cream - Beauty Products - ₹1200
+Novel: "The Alchemist"	Books	500	Novel: "The Alchemist" - Books - ₹500
+Executive Notebook	Stationery	350	Executive Notebook - Stationery - ₹350
+Remote-Control Car	Toys	1,800	Remote-Control Car - Toys - ₹1800
+			
+Formula Used =CONCATENATE(A149," - ",B149," - ","₹",C149)
+12. Dynamically join values from multiple rows into a single summary cell.
+13. Merge student names with their respective scores for report cards.
+14. Combine financial data fields for quick summaries.
+15. Concatenate special characters for password generation.
+
+16. Automate the concatenation of address fields across multiple worksheets.
+17. Use dynamic arrays to join text from a variable number of columns.
+18. Merge and format invoice details into a structured output.
+19. Develop an advanced formula to concatenate text while skipping blank cells.
+20. Concatenate large text datasets without exceeding character limits.
+
+
