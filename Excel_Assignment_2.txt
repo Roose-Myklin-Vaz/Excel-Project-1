@@ -1,0 +1,134 @@
+OFFSET Function
+1. How do you return a value 2 rows below and 1 column to the right of cell A1?
+
+1	Name	Age
+2	Alice	25
+3	Bob	30
+4	Carol	35	
+Reference: Just for understanding we have numbered the rows
+Formula Used =OFFSET(B3,2,1)
+-----------------------------------------------------------------------------
+2. How can you get a range of 3 rows and 2 columns starting from B2?
+
+1	Name	Age		
+2	Alice	25		
+3	Bob	30		
+4	Carol	35		
+5	David	40		
+			Alice	25
+			Bob	30
+			Carol	35
+
+Reference: Just for understanding we have numbered the rows
+Formula Used =OFFSET(B12,0,0,3,2)
+-------------------------------------------------------------------------------
+3. How do you dynamically get the last row in column A if data length changes?
+
+1	10
+2	20
+3	30
+4	40
+5	50
+6	(empty)
+7	(empty)
+	
+------------------------------------------------------------------------------
+4. How do you sum the last 5 values in column B dynamically?
+
+1	10
+2	20
+3	30
+4	40
+5	50
+6	60
+	
+
+----------------------------------------------------------------------------
+5. How can you create a moving average of the last 3 values in column C?
+
+1	10
+2	20
+3	30
+4	40
+5	50
+6	(empty)
+7	(empty)
+
+----------------------------------------------------------------------------
+SUM Function
+=============
+6. How do you sum the range A1:A10?
+
+1	5	
+2	10	
+3	15	
+4	20	
+5	25	
+6	30	
+7	35	
+8	40	
+9	45	
+10	50	
+		275
+
+Formula Used=SUM(B55:B64)
+----------------------------------------------------------------------------
+7. How do you sum values in B1:B10 only if they are greater than 50?
+
+1	30	
+2	60	
+3	80	
+4	40	
+5	100	
+6	20	
+7	70	
+8	10	
+9	55	
+10	90	455
+
+
+Formula Used =SUMIF(B69:B78,">50")		
+
+8. How do you sum values in column C if column A contains "Apple"?
+
+Apple	10	
+Banana	20	
+Apple	30	
+Orange	40	
+Apple	50	
+Mango	60	90
+
+
+		
+Formula Used = SUMIF(A83:A88,"Apple",B83:B88)
+----------------------------------------------------------------------------
+ MATCH Function
+===============
+
+9. How do you find the position of value 50 in range D1:D10?
+
+Column C	Column D	Column E	
+5	10	20	
+15	20	30	
+25	30	40	
+35	40	50	
+45	50	60	
+55	60	70	
+65	70	80	
+75	80	90	
+85	90	100	
+			5
+
+Formula Used = =MATCH(50,B94:B102,0)
+----------------------------------------------------------------------------
+10. How do you find the position of the largest number in column E?
+
+Column D	Column E	Column F	
+10	15	20	
+25	25	30	
+35	35	40	
+45	50	60	
+50	40	70	
+			4
+Formula Used = =MATCH(MAX(B108:B112),B108:B112,0)
+----------------------------------------------------------------------------
